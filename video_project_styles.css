@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6f0;
+}
+
+body {
+  min-height: 400vh;
+}
+
+/* NAVIGATION BAR */
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(83, 65, 60);
+  text-decoration: none;
+}
+
+header {
+  z-index: 1;
+  padding: 10px 5%;
+  background-color: #dbd7d3;
+  box-shadow: 0 10px 50px 10px rgba(53, 53, 53, 0.286);
+  height: 500px;
+}
+
+a {
+  background-color: transparent;
+}
+
+.logo {
+  cursor: pointer;
+  background-color: transparent;
+  width: 50px;
+  height: auto;
+}
+
+.portfolio_text {
+  background-color: transparent;
+  text-align: center;
+  font-size: 140px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: -25px;
+  color: #353839;
+  line-height: 160px;
+}
+
+.video_list {
+  display: flex;
+  flex-direction: row;
+  margin: 90px 50px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+
+.sizing_thumbnail {
+  width: 700px;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  width: 700px;
+  height: 393.75px;
+  background-color: black;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: center;
+  transition: 0.5s ease-in;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: black;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_block {
+  padding-left: 20px;
+  height: 393.75px;
+  border: #3538393a solid 3px;
+  border-left: none;
+}
+
+.text_title {
+  background-color: transparent;
+  color: #353839;
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.text_year {
+  background-color: transparent;
+  color: #353839;
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 90px;
+}
+
+.text_description {
+  background-color: transparent;
+  margin-top: 10px;
+  margin-right: 40px;
+  color: rgba(53, 56, 57, 0.629);
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.whole_group {
+  margin-bottom: 60px;
+}
+
+.links {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.end_card {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: transparent;
+  padding: 15px;
+  font-size: 12px;
+  width: 200px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #353839ca;
+  border: #353839ca solid;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #3538391b;
+}
+
+.end_button_div {
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  border-top: 2px solid #353839;
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}

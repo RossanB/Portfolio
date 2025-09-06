@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>Umami Eats</title>
+    <link rel="icon" type="image/x-icon" href="images/mylogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"></link>
+    <link src="fonts/Winter Sunday.ttf" rel="stylesheet"></link>
+    <link rel="stylesheet" href="style.css" /></link>
+  </head>
+  
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <img class="logo_image" src="images/mylogo.png" width="50"> 
+      <div class="logo">Umami Eats</div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a type="button" onClick="scrollToSection('welcomeScreen')">Home</a>
+          </li>
+          <li>
+            <a type="button" onClick="scrollToSection('general_menu')">Menu</a>
+          </li>
+          <li>
+            <a type="button" onClick="scrollToSection('our_story')">About Us</a>
+          </li>
+          <li>
+            <a type="button" onClick="scrollToSection('contact_us')">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="welcomeScreen_to_About_Us">
+<!-- Welcome Screen -->
+<div class="welcomeScreen" id="welcomeScreen">
+  <button type="button" onClick="scrollToSection('general_menu')" class="our_menu_button">Our Menu</button>
+  <div class="welcomeRectBorder"></div>
+  <div><img class="mochi" src="images/mochi.jpg"></div>
+  <div class="mochi_details">
+    <div class="mochi_details_top">
+      <span class="mochi_details_top_font1">taste</span>
+      <span class="mochi_details_top_font2">and</span>
+      <span class="mochi_details_top_font3">feel</span>
+      <span class="mochi_details_top_font4">the</span>
+      <span class="mochi_details_top_font5">experience</span></div>
+    <div class="mochi_details_main">"One Bite at a Time"</div>
+    <div class="mochi_details_description">Our doors are open for you, just waiting to share some scrumptious bites and sweet delights. 
+      <p>Join us for a tasty adventure!</p></div>
+    </div>
+</div>
+
+<!-- Special Food of the Day -->
+
+<div class="limited_time">
+    <div class="general_limited_time_top">
+    <p class="limited_time_top">ONLY FOR TODAY!</p>
+    <img src="images/divider1.png" width="150" class="flower_divider divider_flavors">
+    <h2 class="limited_time_header">Bites of the Day</h2>
+    <p class="limited_time_description">
+      Discover our limited-time culinary delights! Indulge in our seasonal menu crafted to tantalize your taste buds. Hurry, these exquisite flavors won't last forever—savor them while you can!
+    </p>
+    </div>
+
+    <div class="limited_time_container_cards">
+      <div class="cards_content tempura_card"> 
+        <img src="images/divider1.png" width="150" class="flower_divider divider_tempura">
+        <img src="images/tempura.jpg" width="285" height="336" class="images_cards">
+        <img src="images/divider2.png" width="150" class="flower_divider divider_tempura">
+        <div class="tempura_card_content">
+          <h3 class="tempura_card_title special_title_cards">
+            <h>Tempura</h>
+          </h3>
+          <a type="button" onClick="scrollToSection('general_menu')" class="limited_time_menu">View Menu</a>
+        </div>
+      </div>
+
+      <div class="cards_content miso_soup_card">
+        <img src="images/divider1.png" width="150" class="flower_divider divider_miso_soup">
+          <img src="images/miso_soup.jpg" width="285" height="336" class="images_cards">
+          <img src="images/divider2.png" width="150" class="flower_divider divider_miso_soup">
+          <div class="miso_soup_card_content">
+            <h3 class="miso_soup_card_title special_title_cards">
+              <h>Miso Soup</h>
+            </h3>
+          <a type="button" onClick="scrollToSection('general_menu')" class="limited_time_menu">View Menu</a>
+          </div>
+      </div>
+
+      <div class="cards_content oolong_tea_card">
+           <img src="images/divider1.png" width="150" class="flower_divider divider_oolong_tea">
+            <img src="images/oolong_tea.jpg" width="285" height="336" class="images_cards">
+            <img src="images/divider2.png" width="150" class="flower_divider divider_oolong_tea">
+            <div class="oolong_tea_card_content">
+              <h3 class="oolong_tea_card_title special_title_cards">
+                <h>Oolong Tea</h>
+              </h3>
+            <a type="button" onClick="scrollToSection('general_menu')" class="limited_time_menu">View Menu</a>
+            </div>
+      </div>
+    </div>
+</div>
+
+<div class="over_our_story_container">
+<img src="images/chef.jpg" width="285" height="285" class="our_story_chef">
+</div>
+<div class="our_story" id="our_story">
+  <div class="our_story_content our_story_text">
+    <p class="our_story_top">OUR STORY</p>
+    <img src="images/divider1.png" width="150" class="flower_divider divider_flavors">
+    <h2 class="our_story_header">Stories On Your <br> Plate</h2>
+    <p class="our_story_description">
+      Step into an authentic Japanese culinary experience. Our restaurant is a gateway to culture, offering traditional flavors and ambiance that transport you to Japan. Discover a fusion of taste and tradition, meticulously crafted to immerse you in the heart of Japan's rich culinary heritage. Savor the culture, bite by bite.
+    </p>
+  </div>
+
+    <div class="our_story_content our_story_images">  
+      <img src="images/restaurant.jpg" width="650" height="550" class="our_story_restaurant">
+    </div>
+</div>
+</div>
+
+<!-- MENU -->
+<div class="general_menu" id="general_menu">
+  <div class="general_menu_content">
+  <div class="general_menu_title">
+    <p class="general_menu_top">SPECIAL SELECTION</p>
+    <img src="images/divider1.png" width="110" class="flower_divider divider_menu">
+    <h2 class="menu_top_header">Delicious Menu</h2>
+  </div>
+  <div class="menu">
+  <div class="left_menu">
+    <div class="sukiyaki meals meals_footer_margin_bottom">
+      <div class="sukiyaki_image">
+      <img src="images/sukiyaki.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="sukiyaki_content menu_content">
+      <div class="sukiyaki_line_content menu_line_content">
+        <h3 class="sukiyaki_header">
+          <h class="menu_header">Sukiyaki</h>
+          <img src="images/menudivider.png" class="sukiyaki_menu_divider">
+        </h3>
+        <span class= "sukiyaki_price menu_price">₱620.00</span>
+      </div>
+        <p class="sukiyaki_text menu_description"> fatty beef, vegetables, tofu, and noodles simmered in a sweet sauce </p>
+      </div>
+
+    </div>
+    <div class="yakisoba meals meals_footer_margin_bottom">
+      <div class="yakisoba_image">
+      <img src="images/yakisoba.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="yakisoba_content menu_content">
+      <div class="yakisoba_line_content menu_line_content">
+        <h3 class="yakisoba_header">
+          <h class="menu_header">Yakisoba</h>
+          <img src="images/menudivider.png" class="yakisoba_menu_divider">
+        </h3>
+        <span class="yakisoba_price menu_price">₱220.00</span>
+      </div>
+        <p class="yakisoba_text menu_description"> meat, vegetables, seafood, and stir fried noodles seasoned in a sweet and savory sauce </p>
+      </div>
+    </div>
+
+    <div class="pork_tonkatsu meals">
+      <div class="pork_tonkatsu_image">
+      <img src="images/pork_tonkatsu.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="pork_tonkatsu_content menu_content">
+      <div class="pork_tonkatsu_line_content menu_line_content">
+        <h3 class="pork_tonkatsu_header menu_header">
+          <h class="menu_header">Pork Tonkatsu</h>
+          <img src="images/menudivider_small.png" class="tonkatsu_menu_divider">
+        </h3>
+        <span class="pork_tonkatsu_price menu_price">₱300.00</span>
+      </div>
+        <p class="pork_tonkatsu_text menu_description"> breaded and deep-fried pork cutlet, shredded cabbage, and rice </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="right_menu">
+    <div class="sushi_platter meals meals_footer_margin_bottom">
+      <div class="sushi_platter_image">
+      <img src="images/sushi_platter.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="sushi_platter_content menu_content">
+      <div class="sushi_platter_line_content menu_line_content">
+        <h3 class="sushi_platter_header menu_header">
+          <h class="menu_header">Sushi Platter</h>
+          <img src="images/menudivider_small.png" class="sushi_menu_divider">
+        </h3>
+        <span class="sushi_platter_price menu_price">₱870.00</span>
+      </div>
+        <p class="sushi_platter_text menu_description"> seafood, vegetables, seaweed, and vinegared rice </p>
+      </div>
+    </div>
+
+    <div class="tonkotsu_ramen meals meals_footer_margin_bottom">
+      <div class="tonkotsu_ramen_image">
+      <img src="images/tonkotsu_ramen.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="tonkotsu_ramen_content menu_content">
+      <div class="tonkotsu_ramen_line_content menu_line_content">
+        <h3 class="tonkotsu_ramen_header menu_header">
+          <h class="menu_header">Tonkotsu Ramen</h>
+          <img src="images/menudivider_smaller.png" class="tonkotsu_menu_divider">
+        </h3>
+        <span class="tonkotsu_ramen_price menu_price">₱440.00</span>
+      </div>
+        <p class="tonkotsu_ramen_text menu_description"> creamy pork bone broth, long noodles, pork chashu, eggs and mushrooms </p>
+      </div>
+    </div>
+
+    <div class="yakitori_platter meals">
+      <div class="yakitori_platter_image">
+      <img src="images/yakitori_platter.jpg" width="100" height="100" class="menu_images_cards">
+      </div>
+      <div class="yakitori_platter_content menu_content">
+      <div class="yakitori_platter_line_content menu_line_content">
+        <h3 class="yakitori_platter_header menu_header">
+          <h class="menu_header">Yakitori Platter</h>
+          <img src="images/menudivider_small.png" class="yakitori_menu_divider">
+        </h3>
+        <span class="yakitori_platter_price menu_price ">₱350.00</span>
+      </div>
+        <p class="yakitori_platter_text menu_description"> grilled, bite-sized pieces of chicken on bamboo skewers</p>
+      </div>
+    </div>
+    </div>
+</div>
+
+  <div class="menu_footer"> 
+  <p>Daily from 10:00 a.m to 10:00 p.m</p>
+  <button class="all_menu_button">View All Menu</button>
+  </div>
+</div>
+</div>
+
+<!-- CONTACT US -->
+<div class="online_reservation_and_contact_us" id="contact_us">
+<div class="online_reservation_container">
+  <div class="online_reservation_content">
+  <span class="online_reservation_title">Online Reservation</span>
+  <p class="online_reservation_booking">Booking request 5860-5299 or fill out the order form</p>
+
+  <div class="online_reservation_boxes">
+    <div class="online_reservation_first_line">
+     <input class="online_reservation_name" placeholder="Your Name">
+      <input class="online_reservation_number online_reservation_box1" placeholder="Phone Number">
+    </div>
+
+    <div class="online_reservation_second_line">
+      <select class="online_reservation_party online_reservation_box2">
+        <option>1 Person</option>
+        <option>2 Person</option>
+        <option>3 Person</option>
+        <option>4 Person</option>
+        <option>5 Person</option>
+        <option>6 Person</option>
+        <option>7 Person</option>
+      </select>
+
+      <input type="date" class="online_reservation_date online_reservation_box2">
+      <select class="online_reservation_time online_reservation_box2">
+        <option>08 : 00 am</option>
+        <option>09 : 00 am</option>
+        <option>10 : 00 am</option>
+        <option>11 : 00 am</option>
+        <option>12 : 00 am</option>
+        <option>01 : 00 pm</option>
+        <option>02 : 00 pm</option>
+        <option>03 : 00 pm</option>
+        <option>04 : 00 pm</option>
+        <option>05 : 00 pm</option>
+        <option>06 : 00 pm</option>
+        <option>07 : 00 pm</option>
+        <option>08 : 00 pm</option>
+        <option>09 : 00 pm</option>
+        <option>10 : 00 pm</option>
+      </select>
+    </div>
+
+    <div class="online_reservation_third_line">
+    <textarea class="online_reservation_message online_reservation_box3" placeholder="Type your message"></textarea>
+    </div>
+
+    <div class="online_reservation_fourth_line">
+    <button class="online_reservation_button online_reservation_box4">BOOK A TABLE</button>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="contact_us_container">
+    <div class="contact_us_content">
+      <div class="contact_us_title">Contact Us</div>
+      <div class="contact_us_booking_general contact_us_content_general">
+       <p class="contact_us_booking contact_us_subheader">Booking request</p>
+       <p class="contact_us_number contact_us_text">+88-123-123456</p>
+      </div>
+
+      <div class="contact_us_location_general contact_us_content_general">
+        <p class="contact_us_location contact_us_subheader">Location</p>
+        <p>Hiraya St, Butuan City, Caraga, Philippines</p>
+      </div>
+
+      <div class="contact_us_lunch_time_general contact_us_content_general">
+        <p class="contact_us_subheader">Lunch Time</p>
+        <p>Monday to Sunday</p>
+        <p>10:00 a.m - 2:00 p.m</p>
+      </div>
+
+      <div class="contact_us_dinner_time_general contact_us_content_general">
+        <p class="contact_us_subheader">Dinner Time</p>
+        <p>Monday to Sunday</p>
+        <p>6:00 p.m - 10:00 p.m</p>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<div choose_us_general>
+<div class="choose_us_top_text_general">
+  <p class="choose_us_top_text">WHY CHOOSE US</p>
+  <img src="images/divider1.png" width="100" class="flower_divider divider_choose_us">
+  <h2 class="choose_us_main">Explore</h2>
+</div>
+<div class="choose_us_container">
+  <div class="authentic_food choose_us_content">
+    <img src="images/Food.png" width="120" class="choose_us_food">
+    <div class="choose_us_text_content">
+    <p class="authentic_food_title choose_us_title">Authentic Food</p>
+  </div>
+  </div>
+
+    <div class="culture choose_us_content darker_bg_choose_us">
+      <img src="images/culture.png" width="80" class="choose_us_culture choose_us_image">
+      <div class="choose_us_text_content">
+      <p class="culture_title choose_us_title">Culture</p>
+      </div>
+    </div>
+
+
+  <div class="service choose_us_content">
+    <img src="images/Quality.png" width="80" class="choose_us_quality choose_us_image">
+    <div class="choose_us_text_content">
+    <p class="quality_title choose_us_title">Quality</p>
+  </div>
+  </div>
+
+  <div class="experience choose_us_content darker_bg_choose_us">
+    <img src="images/Service.png" width="90" class="choose_us_quality choose_us_image">
+    <div class="choose_us_text_content">
+    <p class="service_title choose_us_title">Service</p>
+
+  </div>
+  </div>
+</div>
+</div>
+
+<script>
+  function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    const header = document.querySelector('header');
+    const headerHeight = header.offsetHeight;
+    const elementPosition = element.offsetTop;
+    
+    let offsetPosition;
+    
+    switch(sectionId) {
+      case 'welcomeScreen':
+        offsetPosition = 0;
+        break;
+      case 'our_story':
+        offsetPosition = elementPosition - headerHeight;
+        break;
+      case 'general_menu':
+        offsetPosition = elementPosition - headerHeight + 85;
+        break;
+      case 'contact_us':
+        offsetPosition = elementPosition - headerHeight - 35;
+        break;
+      default:
+        offsetPosition = elementPosition - headerHeight + 20;
+    }
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+
+</html>
+
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(images/japanesebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 80px;
+  background: rgba(182, 145, 118, 0.519);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo_image {
+  justify-content: left;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #70533b;
+  margin-right: 500px;
+  font-family: "Tilt Neon", sans-serif;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li a {
+  font-family: "Tilt Neon", sans-serif;
+  cursor: pointer;
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin: 4px;
+}
+
+.nav-bar ul li a:hover {
+  color: rgb(114, 82, 55);
+  background: #fefefe4f;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* Start of Welcome Screen */
+
+.mochi {
+  position: absolute;
+  width: 50vw;
+  height: 91vh;
+  object-fit: cover;
+  padding: 40px;
+  z-index: 1;
+}
+
+.mochi_details {
+  background-image: url(images/marbled.jpg);
+  background-size: 155%;
+  background-position: -300px;
+  height: 642.8px;
+  overflow-x: hidden;
+  position: absolute;
+  margin-left: 750px;
+  margin-bottom: 3000px;
+  margin-right: 30px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+}
+
+.mochi_details_top {
+  padding-top: 120px;
+  margin-bottom: -5px;
+  color: #944b1b8f;
+  margin-top: 60px;
+  margin-left: 105px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Sacramento", cursive;
+  text-shadow: #9393932f 0 4px 5px;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 29, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mochi_details_top span {
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Sacramento", cursive;
+  opacity: 0;
+  filter: blur(4px);
+  position: relative;
+}
+
+.mochi_details_top span:nth-child(1) {
+  animation: fade-in 1.5s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.mochi_details_top span:nth-child(2) {
+  animation: fade-in 1.5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.mochi_details_top span:nth-child(3) {
+  animation: fade-in 1.5s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.mochi_details_top span:nth-child(4) {
+  animation: fade-in 1.5s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.mochi_details_top span:nth-child(5) {
+  animation: fade-in 1.5s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.mochi_details_main {
+  margin-left: 105px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 45px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.mochi_details_description {
+  font-size: 19px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 105px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  text-indent: 50px;
+  color: rgb(113, 77, 58);
+}
+
+.mochi_details_description p {
+  padding-top: 25px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.welcomeScreen {
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.welcomeRectBorder {
+  margin: auto;
+  position: absolute;
+  border-color: white;
+  border-style: solid;
+  border-width: 4px;
+  height: 75.2vh;
+  width: 86.8vw;
+  z-index: 3;
+  transform: translate(7%, 16.5%);
+}
+
+.our_menu_button {
+  top: 480px;
+  right: 285px;
+  position: absolute;
+  color: rgb(191, 143, 108);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: 3px solid rgba(191, 143, 108, 214);
+  box-shadow: -15px 8px 14px rgba(0, 0, 0, 0.097);
+  padding: 15px 45px;
+  z-index: 500;
+  background: transparent;
+  cursor: pointer;
+}
+
+.our_menu_button:hover {
+  background-color: #efb87932;
+  color: rgb(173, 113, 83);
+  border: 3px solid rgba(173, 113, 83, 0.74);
+}
+
+/* SPECIAL FOOD */
+.limited_time {
+  position: absolute;
+  margin-top: 800px;
+  align-items: center;
+  width: 100%;
+}
+
+.general_limited_time_top {
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.limited_time_top {
+  color: #9a6c37;
+  letter-spacing: 4px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.divider_flavors {
+  margin: 10px;
+}
+
+.limited_time_header {
+  font-size: 35px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.limited_time_description {
+  letter-spacing: 1px;
+  font-size: 15.5px;
+  margin-top: 10px;
+  margin-left: 560px;
+  margin-right: 560px;
+  color: rgb(122, 84, 74);
+}
+
+.limited_time_container_cards {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.cards_content {
+  width: 300px;
+  height: 520px;
+  margin: 120px;
+  margin-top: 180px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border: 2px solid rgba(173, 114, 99, 0.422);
+  background-color: rgba(239, 188, 163, 0.327);
+  text-align: center;
+}
+
+.images_cards {
+  object-fit: cover;
+  z-index: 90;
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transform: 1s ease;
+}
+
+.images_cards:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
+  transition: 1s ease;
+}
+
+.miso_soup_card {
+  margin-top: 310px;
+}
+
+.special_title_cards {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(144, 88, 74);
+}
+
+.limited_time_menu {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  padding: 5px 0;
+  color: rgb(173, 114, 99);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  left: 103px;
+  top: 10px;
+}
+
+.limited_time_menu:hover {
+  -webkit-animation: color 1s ease-in forwards;
+  -moz-animation: color 1s ease-in forwards;
+  -o-animation: color 1s ease-in forwards;
+  animation: color 1s ease-in forwards;
+}
+@-webkit-keyframes color {
+  0% {
+    color: rgb(123, 84, 62);
+  }
+  100% {
+    color: rgb(184, 137, 92);
+  }
+}
+@-moz-keyframes color {
+  0% {
+    color: rgb(123, 84, 62);
+  }
+  100% {
+    color: rgb(184, 137, 92);
+  }
+}
+@-o-keyframes color {
+  0% {
+    color: rgb(123, 84, 62);
+  }
+  100% {
+    color: rgb(184, 137, 92);
+  }
+}
+@keyframes color {
+  0% {
+    color: rgb(123, 84, 62);
+  }
+  100% {
+    color: rgb(184, 137, 92);
+  }
+}
+
+.limited_time_menu:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(180, 132, 102);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.limited_time_menu:hover:after {
+  width: 100%;
+  left: 0px;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+/* OUR STORY */
+.our_story {
+  display: flex;
+  position: absolute;
+  margin-top: 1700px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.our_story_cards {
+  object-fit: cover;
+}
+
+.our_story_top {
+  color: rgb(156, 104, 73);
+  letter-spacing: 4px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.our_story_header {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.our_story_description {
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: rgb(114, 79, 55);
+}
+
+.our_story_chef {
+  position: absolute;
+  object-position: 100% 20%;
+  object-fit: cover;
+  margin-top: 2000px;
+  z-index: 1;
+}
+
+.over_our_story_container {
+  text-align: center;
+}
+
+.our_story_images {
+  margin-right: 180px;
+  z-index: 0;
+}
+
+/* MENU */
+.general_menu {
+  background-image: url(images/marble.jpg);
+  margin-top: 2400px;
+  height: 800px;
+  justify-content: center;
+  display: flex;
+}
+
+.general_menu_content {
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.general_menu_title {
+  justify-content: center;
+  text-align: center;
+}
+
+.general_menu_top {
+  letter-spacing: 4px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #956537;
+}
+
+.menu_top_header {
+  font-size: 50px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.menu_images_cards {
+  object-fit: cover;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 90;
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transform: 1s ease;
+}
+
+.menu_images_cards:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  transform: scale(1.06);
+  transition: 1s ease;
+}
+
+.left_menu {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 50px 0 50px;
+}
+
+.right_menu {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 50px 0 50px;
+}
+
+.menu_header {
+  width: 100%;
+  color: #a4733a;
+}
+
+.sukiyaki_menu_divider {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 13px;
+}
+
+.yakisoba_menu_divider {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 8px;
+}
+
+.tonkatsu_menu_divider {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.sushi_menu_divider {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 16px;
+}
+
+.tonkotsu_menu_divider {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 11px;
+}
+
+.yakitori_menu_divider {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  justify-content: center;
+  padding-top: 5px;
+  margin-left: 9px;
+}
+
+.menu_price {
+  font-size: 20px;
+  text-align: right;
+  justify-content: right;
+  display: flex;
+  width: 100%;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #916634 0%,
+    #c88c1d 29%,
+    #c8a92f 67%,
+    #c08357 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.menu_description {
+  color: #503c25;
+}
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.meals {
+  display: flex;
+}
+
+.menu_line_content {
+  display: flex;
+}
+
+.meals_footer_margin_bottom {
+  margin-bottom: 20px;
+}
+
+.menu_footer {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  color: #814a0c;
+}
+
+.all_menu_button {
+  margin-top: 20px;
+  color: rgb(191, 143, 108);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: 3px solid rgba(191, 143, 108, 214);
+  box-shadow: -15px 8px 14px rgba(0, 0, 0, 0.097);
+  padding: 15px 45px;
+  z-index: 500;
+  background: transparent;
+  cursor: pointer;
+}
+
+.all_menu_button:hover {
+  background-color: #efb87932;
+  color: rgb(173, 113, 83);
+  border: 3px solid rgba(173, 113, 83, 0.74);
+}
+
+/* CONTACT US */
+.online_reservation_and_contact_us {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.online_reservation_container {
+  display: flex;
+  border: 4px solid rgba(123, 91, 63, 0.434);
+  padding: 20px;
+  width: 45%;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  background-color: #f8decfa3;
+}
+
+.online_reservation_content {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.online_reservation_title {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.online_reservation_booking {
+  color: rgb(171, 125, 92);
+}
+
+.online_reservation_first_line {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.online_reservation_name {
+  margin-right: 2px;
+}
+
+.online_reservation_number {
+  margin-left: 2px;
+}
+
+.online_reservation_first_line input {
+  border: 2px solid rgba(126, 87, 49, 0.405);
+  width: 100%;
+  display: flex;
+  padding-left: 5px;
+  justify-content: center;
+  height: 40px;
+}
+
+.online_reservation_second_line {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.online_reservation_party {
+  margin-right: 2px;
+}
+
+.online_reservation_date {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.online_reservation_time {
+  margin-left: 2px;
+}
+
+.online_reservation_second_line select {
+  border: 2px solid rgba(126, 87, 49, 0.405);
+  width: 100%;
+  display: flex;
+  padding-left: 5px;
+  justify-content: center;
+  height: 40px;
+}
+
+.online_reservation_second_line input {
+  border: 2px solid rgba(126, 87, 49, 0.405);
+  width: 100%;
+  display: flex;
+  padding-left: 5px;
+  justify-content: center;
+  height: 40px;
+}
+
+.online_reservation_third_line {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.online_reservation_third_line textarea {
+  border: 2px solid rgba(126, 87, 49, 0.405);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding-left: 5px;
+  justify-content: center;
+}
+
+.online_reservation_fourth_line {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.online_reservation_button {
+  height: 60px;
+  width: 100%;
+}
+
+.online_reservation_button:hover {
+  cursor: pointer;
+  background-color: #efb87932;
+  color: rgb(173, 113, 83);
+  border: 3px solid rgba(173, 113, 83, 0.74);
+}
+
+.online_reservation_box {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact_us_container {
+  background-color: #f8decfa3;
+  border-top: 4px solid rgba(123, 91, 63, 0.434);
+  border-right: 4px solid rgba(123, 91, 63, 0.434);
+  border-bottom: 4px solid rgba(123, 91, 63, 0.434);
+  display: flex;
+  padding: 20px;
+  width: 25%;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact_us_content {
+  color: #ae846e;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.contact_us_title {
+  font-size: 40px;
+  margin-top: 55px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.contact_us_subheader {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #c77b4e;
+}
+
+.contact_us_content_general {
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.contact_us_number {
+  font-size: 30px;
+}
+
+.online_reservation_button {
+  margin-top: 20px;
+  color: rgb(171, 125, 92);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border: 3px solid rgba(191, 143, 108, 214);
+  box-shadow: -15px 8px 14px rgba(0, 0, 0, 0.097);
+  padding: 15px 45px;
+  z-index: 500;
+  background: transparent;
+  cursor: pointer;
+}
+
+.online_reservation_button:hover {
+  background-color: #efb87932;
+  color: rgb(173, 113, 83);
+  border: 3px solid rgba(173, 113, 83, 0.74);
+}
+
+/* CHOOSE US */
+.choose_us_top_text_general {
+  justify-content: center;
+  text-align: center;
+  margin: 230px 0 40px;
+}
+
+.choose_us_top_text {
+  color: #9a6c37;
+  letter-spacing: 4px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.divider_choose_us {
+  margin-top: 15px;
+}
+
+.choose_us_main {
+  margin-top: 10px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.316);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.choose_us_container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 162px 200px;
+}
+
+.choose_us_content {
+  border: 4px solid rgba(255, 255, 255, 0.211);
+  border-radius: 40px;
+  background-color: #e3b6836b;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe34, -20px -20px 60px #62626233;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.darker_bg_choose_us {
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe34, -20px -20px 60px #62626233;
+  background-color: #ae834f87;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose_us_food {
+  margin-left: 60px;
+}
+
+.choose_us_title {
+  font-size: 20px;
+  color: #885e49;
+  letter-spacing: 2px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: bold;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(105, 81, 66, 0.084);
+  background-image: linear-gradient(
+    -225deg,
+    #814a0c 0%,
+    #a03711 29%,
+    #c07a25 67%,
+    #9a6c37 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.choose_us_image {
+  justify-content: center;
+  text-align: center;
+  margin-left: 85px;
+}
+
+.choose_us_text_content {
+  margin-top: 20px;
+}
+
+</style>
