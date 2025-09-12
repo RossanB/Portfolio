@@ -8,6 +8,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-height: 500vh;
   background-color: #fdf6f0;
 }
 
@@ -43,6 +47,23 @@ header {
   box-shadow: 0 10px 50px 10px rgba(53, 53, 53, 0.052);
 }
 
+header nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.header_actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fdf6f0;
+}
+
 .logo {
   cursor: pointer;
   background-color: #fdf6f0;
@@ -52,18 +73,21 @@ header {
 
 .nav_content {
   list-style: none;
-  background-color: #fdf6f0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_content li {
   display: inline-block;
   padding: 0px 20px;
-  background-color: #fdf6f0;
+  background-color: transparent;
 }
 
 .nav_content li a {
   transition: all 0.3s ease 0s;
-  background-color: #fdf6f0;
+  background-color: transparent;
 }
 
 .nav_content li a:hover {
@@ -86,6 +110,34 @@ header {
 
 .cta {
   background-color: #fdf7e4;
+}
+
+.theme_toggle_button {
+  padding: 9px 16px;
+  background-color: rgb(248, 217, 200, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: rgb(83, 65, 60);
+}
+
+.theme_toggle_button:hover {
+  background-color: rgba(248, 217, 200, 0.8);
+  color: rgb(194, 167, 145);
+}
+
+.theme_toggle_button .theme_icon {
+  height: 18px;
+  width: 18px;
+  fill: currentColor;
+  vertical-align: -2px;
+  margin-right: 8px;
+  background-color: transparent;
+}
+
+.theme_toggle_button .theme_label {
+  background-color: transparent;
 }
 
 /* INTRODUCTION SELF */
@@ -251,6 +303,12 @@ hr {
   justify-content: center;
 }
 
+.about_me_header_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .about_me_text {
   width: 600px;
   margin-right: 60px;
@@ -277,6 +335,27 @@ hr {
   font-size: 18px;
   text-align: justify;
   color: rgb(83, 65, 60);
+}
+
+.about_edit_button {
+  padding: 6px 14px;
+  background-color: rgb(248, 217, 200, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(83, 65, 60);
+}
+
+.about_edit_button:hover {
+  background-color: rgba(248, 217, 200, 0.8);
+  color: rgb(194, 167, 145);
+}
+
+.editing {
+  outline: 2px dashed rgba(194, 167, 145, 0.6);
+  outline-offset: 4px;
 }
 
 /* My Skills */
@@ -693,4 +772,112 @@ textarea {
   background-position: center;
   background-size: 30px;
   background-repeat: no-repeat;
+}
+
+/* DARK THEME STYLES */
+.dark-theme * { background-color: transparent; }
+body.dark-theme { background-color: #1f1a18; }
+body.dark-theme header,
+body.dark-theme nav,
+body.dark-theme .cta,
+body.dark-theme .header_actions { background-color: #1f1a18; }
+body.dark-theme .nav_content,
+body.dark-theme .nav_content li,
+body.dark-theme .nav_content li a { background-color: transparent; }
+
+body.dark-theme .theme_toggle_button {
+  background-color: #634a41;
+  color: #f0e6df;
+}
+body.dark-theme .theme_toggle_button:hover {
+  background-color: #6f544a;
+  color: #e0cfc4;
+}
+
+body.dark-theme .contact_container,
+body.dark-theme .service_box,
+body.dark-theme .service_text_box { background-color: #2a2220; }
+
+body.dark-theme .round_rectangle_group_1 { background-color: #7a5649; }
+body.dark-theme .round_rectangle_group_2 { background-color: #724d44; }
+body.dark-theme .round_rectangle_group_3 { background-color: #6d4743; }
+body.dark-theme .circle_group_1,
+body.dark-theme .circle_group_2,
+body.dark-theme .circle_group_3 { background-color: #3a2f2c; }
+
+body.dark-theme .send_message_button,
+body.dark-theme .contact_button,
+body.dark-theme .about_edit_button,
+body.dark-theme .icon_container {
+  background-color: #634a41;
+  color: #f0e6df;
+}
+
+body.dark-theme .icon_container:hover,
+body.dark-theme .send_message_button:hover,
+body.dark-theme .contact_button:hover,
+body.dark-theme .theme_toggle_button:hover,
+body.dark-theme .about_edit_button:hover {
+  background-color: #6f544a;
+  color: #e0cfc4;
+}
+
+body.dark-theme li,
+body.dark-theme a,
+body.dark-theme button,
+body.dark-theme .Name,
+body.dark-theme .description,
+body.dark-theme .services_description_text,
+body.dark-theme .about_me_text_main,
+body.dark-theme .about_me_text_name,
+body.dark-theme .about_me_text_description,
+body.dark-theme .general_description,
+body.dark-theme .contact_main_text {
+  color: #f0e6df;
+}
+
+body.dark-theme hr,
+body.dark-theme .contact_line_break {
+  border-top-color: #6f544a;
+}
+
+body.dark-theme header {
+  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-theme .main_header_skills {
+  background-image: linear-gradient(
+    -225deg,
+    #5aa6c8 0%,
+    #4aa692 50%,
+    #8f84b8 100%
+  );
+  -webkit-text-fill-color: transparent;
+}
+
+.header_skill_text { color: rgb(161, 112, 98); }
+body.dark-theme .header_skill_text { color: #f0e6df; }
+
+body.dark-theme .description_skill_text {
+  color: #c9d6df;
+}
+
+body.dark-theme .round_rectangle_group_1 { background-color: #2a3b55; }
+body.dark-theme .round_rectangle_group_2 { background-color: #244a46; }
+body.dark-theme .round_rectangle_group_3 { background-color: #342a4f; }
+body.dark-theme .circle_group_1 { background-color: #1e2e40; }
+body.dark-theme .circle_group_2 { background-color: #1c3a35; }
+body.dark-theme .circle_group_3 { background-color: #2a2142; }
+
+body.dark-theme .services_top_text {
+  background-image: linear-gradient(
+    -225deg,
+    #5aa6c8 0%,
+    #4aa692 50%,
+    #8f84b8 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
