@@ -45,7 +45,8 @@
     <p class="about_me_text_description" id="aboutDescription">Greetings! I'm Bea Rossana M. Balajeboco, a versatile website designer with a passion for digital arts, illustration, and video editing. My expertise extends beyond crafting visually stunning websites to include a flair for creating captivating digital content. Proficient in social media management, I bring a holistic approach to digital presence, ensuring seamless integration of design and content. Explore my portfolio to witness a fusion of innovative website design and compelling multimedia creations. Let's turn ideas into impactful visual experiences!</p>
 </div>
 <div class="about_me_image">
-    <img class="me" src="images/me.jpg" alt="me" height="400px">
+    <img class="me" id="profilePhoto" src="" alt="me" height="400px">
+    <button class="about_edit_button" id="openUploadModal" aria-label="Change photo">Change Photo</button>
 </div>
 </div>
 
@@ -240,6 +241,42 @@
         </div>
         </a>
 
+    <!-- UPLOAD MODAL -->
+    <div id="uploadModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="uploadTitle">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h3 id="uploadTitle">Update Profile Photo</h3>
+                <button class="modal_close" id="closeUploadModal" aria-label="Close">×</button>
+            </div>
+            <form id="uploadForm">
+                <input type="file" id="photoInput" name="photo" accept="image/*" required>
+                <div class="modal_actions">
+                    <button type="submit" class="send_message_button">Upload</button>
+                </div>
+                <p class="upload_hint">Accepted: JPG, PNG, GIF. Max ~5MB.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- ABOUT EDIT MODAL -->
+    <div id="aboutModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="aboutTitle">
+        <div class="modal_content">
+            <div class="modal_header">
+                <h3 id="aboutTitle">Edit About Me</h3>
+                <button class="modal_close" id="closeAboutModal" aria-label="Close">×</button>
+            </div>
+            <form id="aboutForm">
+                <label for="aboutNameInput" class="upload_hint">Name</label>
+                <input type="text" id="aboutNameInput" required>
+                <label for="aboutDescInput" class="upload_hint" style="margin-top:10px; display:block;">Description</label>
+                <textarea id="aboutDescInput" rows="6" required></textarea>
+                <div class="modal_actions">
+                    <button type="submit" class="send_message_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script>
         //<-- SCROLLING FUNC -->
         function scrollToSection(sectionId) {
@@ -301,25 +338,97 @@
                 });
             }
 
-            //<-- EDITING CONTENT -->
-            let isEditing = false;
-            if (aboutEditBtn) {
-                aboutEditBtn.addEventListener('click', function() {
-                    isEditing = !isEditing;
-                    aboutEditBtn.textContent = isEditing ? 'Save' : 'Edit';
-                    [aboutName, aboutDescription].forEach(function(node) {
-                        if (!node) return;
-                        node.contentEditable = isEditing ? 'true' : 'false';
-                        node.classList.toggle('editing', isEditing);
-                        if (isEditing) {
-                            node.focus();
-                        }
-                    });
+            //<-- PROFILE PHOTO FETCH -->
+            const profilePhoto = document.getElementById('profilePhoto');
+            fetch('/api/profile-photo').then(r => r.json()).then(data => {
+                if (data && data.profileImage && profilePhoto) {
+                    profilePhoto.src = data.profileImage;
+                }
+            }).catch(() => {});
 
-                    if (!isEditing) {
-                        if (aboutName) localStorage.setItem('aboutName', aboutName.textContent.trim());
-                        if (aboutDescription) localStorage.setItem('aboutDescription', aboutDescription.textContent.trim());
+            //<-- UPLOAD MODAL -->
+            const openUploadModal = document.getElementById('openUploadModal');
+            const closeUploadModal = document.getElementById('closeUploadModal');
+            const uploadModal = document.getElementById('uploadModal');
+            const uploadForm = document.getElementById('uploadForm');
+            const photoInput = document.getElementById('photoInput');
+
+            function showModal() {
+                if (uploadModal) {
+                    uploadModal.classList.add('show');
+                    uploadModal.setAttribute('aria-hidden', 'false');
+                }
+            }
+            function hideModal() {
+                if (uploadModal) {
+                    uploadModal.classList.remove('show');
+                    uploadModal.setAttribute('aria-hidden', 'true');
+                }
+                if (photoInput) photoInput.value = '';
+            }
+            if (openUploadModal) openUploadModal.addEventListener('click', showModal);
+            if (closeUploadModal) closeUploadModal.addEventListener('click', hideModal);
+            if (uploadModal) uploadModal.addEventListener('click', function(e){ if (e.target === uploadModal) hideModal(); });
+
+            if (uploadForm) {
+                uploadForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const file = photoInput && photoInput.files && photoInput.files[0];
+                    if (!file) return;
+                    const formData = new FormData();
+                    formData.append('photo', file);
+                    try {
+                        const resp = await fetch('/api/upload-profile', { method: 'POST', body: formData });
+                        const data = await resp.json();
+                        if (data && data.profileImage && profilePhoto) {
+                            profilePhoto.src = data.profileImage + '?t=' + Date.now();
+                        }
+                        hideModal();
+                    } catch (err) {}
+                });
+            }
+
+            //<-- ABOUT EDIT MODAL -->
+            const aboutModal = document.getElementById('aboutModal');
+            const closeAboutModal = document.getElementById('closeAboutModal');
+            const aboutForm = document.getElementById('aboutForm');
+            const aboutNameInput = document.getElementById('aboutNameInput');
+            const aboutDescInput = document.getElementById('aboutDescInput');
+
+            function showAboutModal() {
+                if (!aboutModal) return;
+                if (aboutNameInput && aboutName) aboutNameInput.value = aboutName.textContent.trim();
+                if (aboutDescInput && aboutDescription) aboutDescInput.value = aboutDescription.textContent.trim();
+                aboutModal.classList.add('show');
+                aboutModal.setAttribute('aria-hidden', 'false');
+            }
+            function hideAboutModal() {
+                if (!aboutModal) return;
+                aboutModal.classList.remove('show');
+                aboutModal.setAttribute('aria-hidden', 'true');
+            }
+            if (aboutEditBtn) aboutEditBtn.addEventListener('click', showAboutModal);
+            if (closeAboutModal) closeAboutModal.addEventListener('click', hideAboutModal);
+            if (aboutModal) aboutModal.addEventListener('click', function(e){ if (e.target === aboutModal) hideAboutModal(); });
+
+            if (aboutForm) {
+                aboutForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    if (aboutName && aboutNameInput) {
+                        const nameVal = aboutNameInput.value.trim();
+                        if (nameVal) {
+                            aboutName.textContent = nameVal;
+                            localStorage.setItem('aboutName', nameVal);
+                        }
                     }
+                    if (aboutDescription && aboutDescInput) {
+                        const descVal = aboutDescInput.value.trim();
+                        if (descVal) {
+                            aboutDescription.textContent = descVal;
+                            localStorage.setItem('aboutDescription', descVal);
+                        }
+                    }
+                    hideAboutModal();
                 });
             }
         })();
