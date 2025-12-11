@@ -657,6 +657,7 @@ input {
   border: none;
   border-bottom: 2px solid rgb(170, 152, 146);
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 2px;
   background-color: transparent;
 }
@@ -693,6 +694,8 @@ textarea {
   border: none;
   border-bottom: 2px solid rgb(170, 152, 146);
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   background-color: transparent;
 }
 
@@ -877,82 +880,4 @@ body.dark-theme .services_top_text {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0,0,0,0.4);
-  z-index: 1000;
-}
-
-.modal.show { display: flex; }
-
-.modal_content {
-  background: #fff7f2;
-  border: 2px solid rgb(170, 152, 146);
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 420px;
-  color: rgb(83, 65, 60);
-}
-
-.modal_header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.modal_header h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  flex: 1;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.modal_close {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgb(248, 217, 200);
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-
-.modal_actions { margin-top: 10px; }
-
-.upload_hint {
-  margin-top: 8px;
-  font-size: 12px;
-  font-family: "Abhaya Libre", serif;
-  font-weight: bold;
-  color: rgba(83,65,60,0.8);
-}
-
-.about_me_image { display: flex; flex-direction: column; align-items: center; gap: 10px; }
-
-body.dark-theme .modal_content { background: #2a2220; color: #f0e6df; }
-body.dark-theme .modal_close { background: #634a41; color: #f0e6df; }
-
-
-body.dark-theme .modal_content input[type="text"],
-body.dark-theme .modal_content textarea {
-  color: #f0e6df; 
-  border-bottom-color: #6f544a; 
-}
-
-body.dark-theme .modal_content .upload_hint {
-  color: rgba(240, 230, 223, 0.8); 
 }
